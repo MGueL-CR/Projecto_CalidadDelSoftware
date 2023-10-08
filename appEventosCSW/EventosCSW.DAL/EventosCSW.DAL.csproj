@@ -42,7 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clases\DBConnection.cs" />
+    <Compile Include="Clases\AsistenciaDAL.cs" />
+    <Compile Include="Clases\EventoDAL.cs" />
+    <Compile Include="Clases\MiembroDAL.cs" />
+    <Compile Include="Clases\UsuarioDAL.cs" />
+    <Compile Include="Tools\DBConnection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -51,8 +55,6 @@
       <Name>EventosCSW.EL</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Tools\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

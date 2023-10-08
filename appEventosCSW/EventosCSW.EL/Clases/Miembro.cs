@@ -16,7 +16,7 @@ namespace EventosCSW.EL.Clases
         public string Telefono { set; get; }
         public bool Estado { set; get; }
         public bool Asistencia { set; get; }
-        public bool HoraIngreso { set; get; }
+        public DateTime HoraIngreso { set; get; }
         public Mesa Mesa { set; get; }
         public Usuario Usuario { set; get; }
     }

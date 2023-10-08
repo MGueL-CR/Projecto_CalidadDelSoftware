@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EventosCSW.DAL.Clases
+namespace EventosCSW.DAL.Tools
 {
     public class DBConnection
     {
