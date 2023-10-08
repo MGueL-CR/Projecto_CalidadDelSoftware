@@ -1,0 +1,6 @@
+D:\Mis Archivos\A\Visual Studio 2017\Projects\EventosCSW\Projecto_CalidadDelSoftware\appEventosCSW\EventosCSW.EL\bin\Debug\EventosCSW.EL.dll
+D:\Mis Archivos\A\Visual Studio 2017\Projects\EventosCSW\Projecto_CalidadDelSoftware\appEventosCSW\EventosCSW.EL\bin\Debug\EventosCSW.EL.pdb
+D:\Mis Archivos\A\Visual Studio 2017\Projects\EventosCSW\Projecto_CalidadDelSoftware\appEventosCSW\EventosCSW.EL\obj\Debug\EventosCSW.EL.csprojAssemblyReference.cache
+D:\Mis Archivos\A\Visual Studio 2017\Projects\EventosCSW\Projecto_CalidadDelSoftware\appEventosCSW\EventosCSW.EL\obj\Debug\EventosCSW.EL.csproj.CoreCompileInputs.cache
+D:\Mis Archivos\A\Visual Studio 2017\Projects\EventosCSW\Projecto_CalidadDelSoftware\appEventosCSW\EventosCSW.EL\obj\Debug\EventosCSW.EL.dll
+D:\Mis Archivos\A\Visual Studio 2017\Projects\EventosCSW\Projecto_CalidadDelSoftware\appEventosCSW\EventosCSW.EL\obj\Debug\EventosCSW.EL.pdb
