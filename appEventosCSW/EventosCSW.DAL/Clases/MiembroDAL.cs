@@ -84,7 +84,7 @@ namespace EventosCSW.DAL.Clases
             }
         }
 
-        public static Miembro SelectElemenByID(int pId)
+        public static Miembro SelectElementByID(int pId)
         {
             Miembro oElemento = new Miembro();
 
@@ -121,7 +121,7 @@ namespace EventosCSW.DAL.Clases
             }
         }
 
-        public static Miembro SelectElemenByCodigo(string pCodigo)
+        public static Miembro SelectElementByCodigo(string pCodigo)
         {
             Miembro oElemento = new Miembro();
 
@@ -158,7 +158,7 @@ namespace EventosCSW.DAL.Clases
             }
         }
 
-        public static Miembro SelectElemenByCedula(string pCedula)
+        public static Miembro SelectElementByCedula(string pCedula)
         {
             Miembro oElemento = new Miembro();
 
@@ -225,12 +225,11 @@ namespace EventosCSW.DAL.Clases
                 catch (Exception eErr)
                 {
                     throw new ApplicationException(string.Format("{0}\n\nDetalles del error:\n{1}", 
-                        "Falló al recuperar la información de los eventos.", eErr.Message));
+                        "Falló al recuperar la información de los miembros.", eErr.Message));
                 }
 
             }
         }
-
 
         private static Miembro ConvertToObject(SqlDataReader pDR)
         {
@@ -243,10 +242,10 @@ namespace EventosCSW.DAL.Clases
                 Correo = pDR["correo"].ToString(),
                 Telefono = pDR["telefono"].ToString(),
                 HoraIngreso = Convert.ToDateTime(pDR["horaIngreso"]),
-                Mesa = Convert.ToInt32(pDR["idMesa"]), // Instanciar clase
+                Mesa = MesaDAL.SelectElementByID(Convert.ToInt32(pDR["idMesa"])),
                 Estado = Convert.ToBoolean(pDR["estado"]),
                 Asistencia = Convert.ToBoolean(pDR["asistencia"]),
-                Usuario = Convert.ToInt32(pDR["usModificador"]) // Instanciar clase
+                Usuario = UsuarioDAL.SelectElementByID(Convert.ToInt32(pDR["usModificador"]))
             };
         }
     }

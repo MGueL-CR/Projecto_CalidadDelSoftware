@@ -44,7 +44,9 @@
   <ItemGroup>
     <Compile Include="Clases\AsistenciaDAL.cs" />
     <Compile Include="Clases\EventoDAL.cs" />
+    <Compile Include="Clases\MesaDAL.cs" />
     <Compile Include="Clases\MiembroDAL.cs" />
+    <Compile Include="Clases\RolDAL.cs" />
     <Compile Include="Clases\UsuarioDAL.cs" />
     <Compile Include="Tools\DBConnection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

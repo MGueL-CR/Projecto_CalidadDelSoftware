@@ -197,7 +197,7 @@ namespace EventosCSW.DAL.Clases
                 Correo = pDR["correo"].ToString(),
                 CodUsuario = pDR["codUsuario"].ToString(),
                 Contrasenia = pDR["contrasenia"].ToString(),
-                Rol = Convert.ToInt32(pDR["idRol"]), // Instanciar Clase
+                Rol = RolDAL.SelectElementByID(Convert.ToInt32(pDR["idRol"])), // Instanciar Clase
                 Estado = Convert.ToBoolean(pDR["estado"])
             };
         }
