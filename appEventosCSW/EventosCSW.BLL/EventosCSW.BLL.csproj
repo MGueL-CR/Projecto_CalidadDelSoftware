@@ -41,7 +41,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\AsistenciaBLL.cs" />
+    <Compile Include="Clases\EventoBLL.cs" />
+    <Compile Include="Clases\MesaBLL.cs" />
+    <Compile Include="Clases\MiembroBLL.cs" />
+    <Compile Include="Clases\RolBLL.cs" />
+    <Compile Include="Clases\UsuarioBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EventosCSW.DAL\EventosCSW.DAL.csproj">
+      <Project>{cbf0bc23-1602-4a45-a9b3-6ce9982f21a3}</Project>
+      <Name>EventosCSW.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EventosCSW.EL\EventosCSW.EL.csproj">
+      <Project>{47359bf1-c85b-4ca5-a409-921a8f6072c9}</Project>
+      <Name>EventosCSW.EL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

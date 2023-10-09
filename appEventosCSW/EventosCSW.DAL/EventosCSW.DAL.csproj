@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,7 +42,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\AsistenciaDAL.cs" />
+    <Compile Include="Clases\EventoDAL.cs" />
+    <Compile Include="Clases\MesaDAL.cs" />
+    <Compile Include="Clases\MiembroDAL.cs" />
+    <Compile Include="Clases\RolDAL.cs" />
+    <Compile Include="Clases\UsuarioDAL.cs" />
+    <Compile Include="Tools\DBConnection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EventosCSW.EL\EventosCSW.EL.csproj">
+      <Project>{47359bf1-c85b-4ca5-a409-921a8f6072c9}</Project>
+      <Name>EventosCSW.EL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
