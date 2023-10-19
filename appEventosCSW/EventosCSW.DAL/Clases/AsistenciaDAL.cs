@@ -150,7 +150,7 @@ namespace EventosCSW.DAL.Clases
             {
                 Id = Convert.ToInt32(pDR["id"]),
                 Evento = EventoDAL.SelectElementByID(Convert.ToInt32(pDR["idEvento"])),
-                Miembro = MiembroDAL.SelectElemenByID(Convert.ToInt32(pDR["idMiembro"])),
+                Miembro = MiembroDAL.SelectElementByID(Convert.ToInt32(pDR["idMiembro"])),
                 Confirmado = Convert.ToBoolean(pDR["estado"])
             };
         }

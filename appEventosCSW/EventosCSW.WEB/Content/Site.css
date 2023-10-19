@@ -1,7 +1,6 @@
 ﻿/* Move down content because we have a fixed navbar that is 50px tall */
 body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    height: 100vh;
 }
 
 /* Wrapping element */
@@ -18,6 +17,14 @@ textarea {
     max-width: 280px;
 }
 
+.footer {
+    display: grid;
+    place-items: center;
+    margin-top: 2rem;
+    background-color: whitesmoke;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
@@ -29,3 +36,4 @@ textarea {
         padding: 0;
     }
 }
+

@@ -48,6 +48,7 @@
     <Compile Include="Clases\RolBLL.cs" />
     <Compile Include="Clases\UsuarioBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\ValidadorBLL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EventosCSW.DAL\EventosCSW.DAL.csproj">

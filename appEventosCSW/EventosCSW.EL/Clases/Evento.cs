@@ -9,7 +9,7 @@ namespace EventosCSW.EL.Clases
     public class Evento
     {
         public int Id { set; get; }
-        public String Nombre { set; get; }
+        public string Nombre { set; get; }
         public DateTime Fecha { set; get; }
         public int Cantidad { set; get; }
         public bool Estado { set; get; }

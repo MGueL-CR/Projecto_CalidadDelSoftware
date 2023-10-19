@@ -2,6 +2,7 @@
 using EventosCSW.EL.Clases;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,11 @@ namespace EventosCSW.BLL.Clases
         public static bool CreateMiembro(Miembro pMiembro)
         {
             return MiembroDAL.CreateElement(pMiembro);
+        }
+
+        public static bool InsertListaMiembros(DataTable pLstMiembros, int pIDUsuario)
+        {
+            return MiembroDAL.InsertListaMiembros(pLstMiembros, pIDUsuario);
         }
 
         public static bool UpdateMiembro(Miembro pMiembro)

@@ -2,6 +2,7 @@
 using EventosCSW.EL.Clases;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -43,6 +44,34 @@ namespace EventosCSW.DAL.Clases
                 {
                     throw new ApplicationException(string.Format("{0}\n{1}.\n\nDetalles del error:\n{2}", 
                         "Falló al crear el nuevo Miembro:", pMiembro.NombreCompleto, eErr.Message));
+                }
+            }
+        }
+
+        public static bool InsertListaMiembros(DataTable pLstMiembros, int pIDUsuario)
+        {
+            using (SqlConnection oCX = new SqlConnection(DBConnection.urlSQLServer))
+            {
+                SqlCommand oCMD = new SqlCommand()
+                {
+                    Connection = oCX,
+                    CommandType = System.Data.CommandType.StoredProcedure,
+                    CommandText = "SP_Insert_Lista_Miembros"
+                };
+
+                oCMD.Parameters.AddWithValue("@EstructuraCarga", SqlDbType.Structured).Value= pLstMiembros;
+                oCMD.Parameters.AddWithValue("usModificador", pIDUsuario);
+
+                try
+                {
+                    oCX.Open();
+                    oCMD.ExecuteNonQuery();
+                    return true;
+                }
+                catch (Exception eErr)
+                {
+                    throw new ApplicationException(string.Format("{0}.\n\nDetalles del error:\n{1}",
+                        "Falló al registrar los miembros", eErr.Message));
                 }
             }
         }
